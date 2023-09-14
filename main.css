@@ -1,0 +1,242 @@
+/*--------------------------- Whole page ---------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+}
+
+element {
+  --brand-color: rgb(69, 131, 211);
+}
+
+.full-page {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.br-standard {
+  border-radius: 15px;
+}
+
+/*--------------------------- Sidebar Desktop ---------------------------*/
+
+.logo {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.sidebar {
+  background-color: rgb(255, 255, 255);
+}
+
+.sidebar > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+nav {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+nav > ul {
+  list-style: none;
+}
+
+li > .material-symbols-outlined {
+  padding-right: 10px;
+}
+
+nav > ul > li {
+  width: 165px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  font-size: 120%;
+  padding: 12px;
+  border-radius: 15px;
+  background-color: transparent;
+}
+
+nav > ul > li:hover {
+  background-color: rgb(235, 235, 235);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+nav > ul > li.active {
+  background-color: rgb(69, 131, 211);
+  color: white;
+}
+
+/*--------------------------- Home Tab ---------------------------*/
+
+#home {
+  background-color: rgb(232, 244, 245);
+  display: grid;
+  border-left: 2px rgb(202, 202, 202) solid;
+}
+
+/*--------------------------- Payments Tab ---------------------------*/
+
+#payments {
+  background-color: rgb(232, 244, 245);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-left: 2px rgb(202, 202, 202) solid;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  height: 60%;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 30px 30px 30px rgb(194, 194, 194);
+  transition: transform 0.5s ease;
+}
+
+.payment-option h2,
+.payment-option span {
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.payment-option h2 {
+  font-size: 180%;
+  font-weight: 600;
+}
+
+.payment-option span {
+  font-size: 350%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border-radius: 25px;
+  color: white;
+}
+
+.payment-option.receive > div > span {
+  background-color: rgb(69, 131, 211);
+}
+
+.payment-option.send > div > span {
+  background-color: rgb(69, 131, 211);
+}
+
+.payment-option:hover {
+  cursor: pointer;
+  transform: translateY(-20px);
+  transition: 0.5s;
+}
+
+#payments > * > h2 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 100%;
+}
+
+/*--------------------------- Accounts Tab ---------------------------*/
+
+#accounts {
+  background-color: rgb(232, 244, 245);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 40% 40%;
+  border-left: 2px rgb(202, 202, 202) solid;
+  gap: 30px;
+  padding: 30px;
+  overflow: hidden;
+  padding-top: 50px;
+}
+
+#accounts > div {
+  background-color: white;
+  box-shadow: 15px 15px 20px rgb(194, 194, 194);
+  text-align: center;
+  transition: transform 0.5s ease;
+}
+
+#accounts > div:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+  transition: 0.5s;
+}
+
+.account-flex {
+  margin-top: 10%;
+}
+
+.account-flex > h3 {
+  font-size: 180%;
+  font-weight: 500;
+}
+
+.account-flex > span {
+  padding-top: 20px;
+  font-size: 200%;
+  font-weight: bold;
+}
+
+#main-account > div > * {
+  color: rgb(69, 131, 211);
+}
+
+#savings-account > div > * {
+  color: rgb(46, 173, 29);
+}
+
+.accountTotal {
+  padding-top: 6%;
+  font-size: 140%;
+  font-weight: 600;
+}
+
+#create-account {
+  order: 6;
+}
+
+#create-account > div > * {
+  color: rgb(145, 145, 145);
+}
+
+#create-account > div > span {
+  font-size: 3rem;
+}
+
+/*--------------------------- Transfer Log Tab ---------------------------*/
+
+#transfer-log {
+  background-color: rgb(232, 244, 245);
+  display: grid;
+  border-left: 2px rgb(202, 202, 202) solid;
+}
+
+/*--------------------------- User Info Tab ---------------------------*/
+
+#user-info {
+  background-color: rgb(232, 244, 245);
+  display: grid;
+  border-left: 2px rgb(202, 202, 202) solid;
+}
